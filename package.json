@@ -1,0 +1,11 @@
+{
+  "name": "@kennship/docker-node",
+  "version": "0.0.0-semantically-released",
+  "description": "Docker images for Node.js development",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Kennedy",
+  "license": "ISC"
+}
