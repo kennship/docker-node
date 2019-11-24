@@ -9,10 +9,9 @@ workflows:
           name: "Publish node-ci image"
           path: "./packages/node-ci"
           context: "gh-npm-public"
-          docker-username: GH_PACKAGES_USERNAME
-          docker-password: GH_PACKAGES_PASSWORD
-          registry: docker.pkg.github.com
-          image: "kennship/docker-node/ci"
+          docker-username: DOCKER_HUB_USERNAME
+          docker-password: DOCKER_HUB_PASSWORD
+          image: "kennship/node-ci"
 
 orbs:
   docker: circleci/docker@0.5.18
