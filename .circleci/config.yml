@@ -6,6 +6,13 @@ workflows:
   main:
     jobs:
       - docker/publish:
+          name: "Publish node image"
+          path: "./packages/node"
+          context: "gh-npm-public"
+          docker-username: DOCKER_HUB_USERNAME
+          docker-password: DOCKER_HUB_PASSWORD
+          image: "kennship/node"
+      - docker/publish:
           name: "Publish node-ci image"
           path: "./packages/node-ci"
           context: "gh-npm-public"
